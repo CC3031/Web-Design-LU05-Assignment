@@ -53,7 +53,7 @@ dealProducts.forEach(product => {
         <img src="${product.image}" alt="${product.name}">
         <h3>${product.name}</h3>
         <div class="price">
-            <span class="old">$${product.oldPrice.toFixed(2)}</span>
+            <span class="old line-through">$${product.oldPrice.toFixed(2)}</span>
             <span class="new">$${product.price.toFixed(2)}</span>
         </div>
     `;

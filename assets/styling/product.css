@@ -1,22 +1,43 @@
+/*
+I'm not sure why, but if I don't annotate everything other than the product card elements with !important,
+the styling doesn't work. I think Tailwind is overriding the styles, but I moved the link above which should
+have fixed it. So I just added !important to everything else to make sure it works. I don't like it, but it is what it is.
+*/
+
 .supx-category {
-    margin: 20px;
+    margin: 20px !important;
+    margin-bottom: 40px !important;
 }
 
 .supx-product-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
 }
 
 .product-card {
-    width: 250px;
+    width: 300px;
     border: 2px solid #ddd;
     padding: 15px;
+    margin: 5px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-img {
+.product-card img {
     height: 250px;
     width: 100%;
     object-fit: cover;
+}
+
+.product-card h3 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+    font-size: 25px !important;
 }
