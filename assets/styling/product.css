@@ -39,7 +39,7 @@ Update: The font changes work without !important, but the other styles don't. I 
 
 .product-card {
     width: 300px;
-    border: 2px solid #ddd;
+    border: 2px solid rgb(221, 189, 4);
     padding: 15px;
     margin: 5px;
     border-radius: 8px;
@@ -64,16 +64,29 @@ h2 {
     font-size: 25px !important;
 }
 
-a {
+
+body {
+    background-color: black;
+}
+
+header a {
     font-family: "Nexa-Heavy", sans-serif;
+    color: rgb(221, 189, 4);
 }
 
 #supx-subheader a {
     font-family: "Nexa-ExtraLight", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(221, 189, 4);
 }
 
-h2, h3, p {
+h2, span {
     font-family: "Roboto-Light", Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+footer p {
+    font-family: "Roboto-Light", Georgia, 'Times New Roman', Times, serif;
+    color: gray;
 }
 
 .old {
