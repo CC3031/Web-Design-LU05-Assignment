@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="/assets/styling/contact.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
         </div>
     </header>
     <div class="w-full flex justify-center">
-    <img src="./assets/images/eminem.png" alt="Eminem image that satisfies learning unit 8's requirements" class="mt-10 w-[clamp(100px,20vw,600px)] h-full object-cover border shadow-lg border-gray-300 rounded-lg">
+    <img src="/assets/images/eminem.png" alt="Eminem image that satisfies learning unit 8's requirements" class="mt-10 w-[clamp(100px,20vw,600px)] h-full object-cover border shadow-lg border-gray-300 rounded-lg">
     </div>
     <main class="max-w-3xl mx-auto my-5 p-6 border rounded-md shadow-md">
         <div id="supx-contact-body">
@@ -25,7 +26,7 @@
             </h2>
             <form id="supx-contact-form" class="space-y-6">
                 <div class="form-question-answer flex flex-col">
-                    <label for="concern" class="mb-2 font-medium">
+                    <label for="concern" class="mb-2 font-bold">
                         Describe your concern, problem, or question in detail.
                     </label>
                     <input type="text" id="concern" name="concern"
@@ -34,7 +35,7 @@
                     >
                 </div>
                 <div class="form-question-answer flex flex-col">
-                    <label for="additional-info" class="mb-2 font-medium">
+                    <label for="additional-info" class="mb-2 font-bold">
                         Additional information (IE: device, steps to recreate, etc).
                     </label>
                     <input type="text" id="additional-info" name="additional-info"
@@ -43,7 +44,7 @@
                     >
                 </div>
                 <div class="form-question-answer flex flex-col">
-                    <label for="contact-info" class="mb-2 font-medium">
+                    <label for="contact-info" class="mb-2 font-bold">
                         Please enter your preferred contact information.
                     </label>
                     <input type="text" id="contact-info" name="contact-info"
@@ -51,7 +52,7 @@
                         class="border border-gray-300 rounded-md p-3"
                     >
                 </div>
-                <input type="submit" value="Submit"
+                <input id="submit-button" type="submit" value="Submit"
                     class="border border-black rounded-md w-full font-bold py-3 hover:bg-black hover:text-white cursor-pointer"
                 >
             </form>

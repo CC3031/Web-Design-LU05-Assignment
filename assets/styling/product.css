@@ -2,7 +2,29 @@
 I'm not sure why, but if I don't annotate everything other than the product card elements with !important,
 the styling doesn't work. I think Tailwind is overriding the styles, but I moved the link above which should
 have fixed it. So I just added !important to everything else to make sure it works. I don't like it, but it is what it is.
+
+Update: The font changes work without !important, but the other styles don't. I don't even know at this point man.
 */
+
+@font-face {
+    font-family: "Nexa-Heavy";
+    src: url("/assets/fonts/Nexa-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa-ExtraLight";
+    src: url("/assets/fonts/Nexa-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("/assets/fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-LightItalic";
+    src: url("/assets/fonts/Roboto-LightItalic.ttf") format("truetype");
+}
 
 .supx-category {
     margin: 20px !important;
@@ -40,4 +62,20 @@ h2 {
     font-weight: bold !important;
     margin-bottom: 10px !important;
     font-size: 25px !important;
+}
+
+a {
+    font-family: "Nexa-Heavy", sans-serif;
+}
+
+#supx-subheader a {
+    font-family: "Nexa-ExtraLight", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2, h3, p {
+    font-family: "Roboto-Light", Georgia, 'Times New Roman', Times, serif;
+}
+
+.old {
+    font-family: "Roboto-LightItalic", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

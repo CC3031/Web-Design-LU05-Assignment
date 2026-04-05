@@ -18,28 +18,18 @@
     src: url("/assets/fonts/Roboto-LightItalic.ttf") format("truetype");
 }
 
-#supx-home-body h2 {
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-#supx-home-body {
-    margin: 10px;
-}
-
 a {
     font-family: "Nexa-Heavy", sans-serif;
 }
 
-#supx-subheader a {
+#supx-subheader a, label {
     font-family: "Nexa-ExtraLight", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h2, p {
+h2, #submit-button {
     font-family: "Roboto-Light", Georgia, 'Times New Roman', Times, serif;
 }
 
-#samplers-link {
+input {
     font-family: "Roboto-LightItalic", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
