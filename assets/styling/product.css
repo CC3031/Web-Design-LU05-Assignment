@@ -1,0 +1,22 @@
+.supx-category {
+    margin: 20px;
+}
+
+.supx-product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-card {
+    width: 250px;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
