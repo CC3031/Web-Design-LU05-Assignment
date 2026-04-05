@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="/assets/styling/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>SupplemeX</h1>
-        <div id="supx-subheader">
-            <a href="/contact.html">Contact Us</a>
-            <a href="/product.html">Supplements</a>
+    <header class="flex justify-between items-center p-4">
+        <h1 class="text-3xl font-bold mb-4">SupplemeX</h1>
+        <div id="supx-subheader" class="space-x-4">
+            <a href="/contact.html" class="hover:underline">Contact Us</a>
+            <a href="/product.html" class="hover:underline">Supplements</a>
         </div>
     </header>
 
-    <main>
-        <div id="supx-intro">
-            <img src="/assets/images/guylifting.png" alt="Man holding two dumbbells over shoulders in dark lighting">
-            <p>SupplemeX is the fitness world's leading supplement 
+    <main class="flex flex-col">
+        <div id="supx-intro" class="flex items-center p-4 gap-4">
+            <img class="w-[clamp(150px,50vw,600px)] object-cover" src="/assets/images/guylifting.png" alt="Man holding two dumbbells over shoulders in dark lighting">
+            <p class="text-sm md:text-base lg:text-lg">
+                SupplemeX is the fitness world's leading supplement 
                 store for 17 years. We have a diverse array of 
                 supplements to level up your routine, including 
                 BCAAs, vitamins, probiotics, proteins, creatines, 
@@ -25,7 +28,7 @@
             </p>
         </div>
 
-        <div id="supx-home-body">
+        <div id="supx-home-body" class="flex flex-col p-1">
             <h2>Our purpose</h2>
             <p>
                 SupplemeX aims to streamline supplement shopping, 
@@ -61,7 +64,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="p-4 text-center">
         <p>Copyright SupplemeX Co. 2020-2026. All rights reserved.</p>
     </footer>
 </body>
